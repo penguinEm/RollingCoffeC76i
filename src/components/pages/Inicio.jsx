@@ -1,11 +1,20 @@
+import banner from "../../assets/banner.jpg";
+import ContenedorCards from "./ContenedorCards";
 
 
 const Inicio = () => {
-    return (
-        <div>
-            <p>Aquui va el maquetado de main inicio</p>
-        </div>
-    );
+  return (
+    <section className="main">
+      <article>
+        <img
+          src={banner}
+          alt="Banner local fisico"
+          className="w-100 bannerDimesiones"
+        />
+      </article>
+      <ContenedorCards></ContenedorCards>
+    </section>
+  );
 };
 
 export default Inicio;

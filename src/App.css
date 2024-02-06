@@ -1,0 +1,47 @@
+.bg-green {
+  background-color: #003c25;
+}
+.text-green {
+  color: #003c25;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.logoDimensiones {
+  width: 10rem;
+}
+
+.bannerDimesiones {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.cardDimensiones {
+  width: 20rem;
+}
+
+.cardEfectos:hover{
+  transition: transform 0.2s ease-in-out;
+   
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardScroll {
+  overflow-y: auto;
+  height: 45px;
+}
+
+@media all and (max-width: 991px) {
+  .bannerDimesiones {
+    height: 400px;
+  }
+}
