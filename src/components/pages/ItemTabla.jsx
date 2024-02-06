@@ -24,10 +24,10 @@ const ItemTabla = () => {
       {/* Opciones */}
       <td className="text-center">
         <Button variant="warning" className="me-1">
-          <i class="bi bi-pencil-square"></i>
+          <i className="bi bi-pencil-square"></i>
         </Button>
         <Button variant="danger">
-          <i class="bi bi-trash"></i>
+          <i className="bi bi-trash"></i>
         </Button>
       </td>
     </tr>
