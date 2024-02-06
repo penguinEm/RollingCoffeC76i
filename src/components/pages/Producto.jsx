@@ -1,4 +1,5 @@
-import { Card, Button } from "react-bootstrap";
+import { Card} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import producto1 from "../../assets/croissant.jpg";
 
 const Producto = () => {
@@ -18,7 +19,7 @@ const Producto = () => {
         </Card.Text>
       </Card.Body>
       <Card.Footer className="text-end">
-        <Button variant="success">Ver más</Button>
+        <Link className="btn btn-success border-0">Ver más</Link>
       </Card.Footer>
     </Card>
   );
