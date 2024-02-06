@@ -1,7 +1,6 @@
 import banner from "../../assets/banner.jpg";
 import ContenedorCards from "./ContenedorCards";
 
-
 const Inicio = () => {
   return (
     <section className="main">
@@ -12,7 +11,9 @@ const Inicio = () => {
           className="w-100 bannerDimesiones"
         />
       </article>
-      <ContenedorCards></ContenedorCards>
+      <article>
+        <ContenedorCards></ContenedorCards>
+      </article>
     </section>
   );
 };

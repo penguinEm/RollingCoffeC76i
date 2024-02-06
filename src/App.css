@@ -29,9 +29,9 @@
   width: 20rem;
 }
 
-.cardEfectos:hover{
+.cardEfectos:hover {
   transition: transform 0.2s ease-in-out;
-   
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -40,8 +40,17 @@
   height: 45px;
 }
 
+.tablaImagenDimensiones {
+  width: 11rem;
+  height: 9rem;
+}
+
 @media all and (max-width: 991px) {
   .bannerDimesiones {
     height: 400px;
   }
+}
+
+@media all and (max-width: 767px) {
+  
 }
