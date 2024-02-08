@@ -1,4 +1,5 @@
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import ContenedorTabla from "./ContenedorTabla";
 
 const Administrador = () => {
@@ -7,9 +8,9 @@ const Administrador = () => {
       <section className="d-flex align-items-center accordion-collapsemt-5 border-bottom pb-3">
         <h1 className="display-4 ">Productos Disponibles</h1>
         <div className="ms-auto">
-          <Button>
+          <Link className="btn btn-primary" to="/administrador/editar">
             <i className="bi bi-file-earmark-plus-fill"></i>
-          </Button>
+          </Link>
         </div>
       </section>
       <section>

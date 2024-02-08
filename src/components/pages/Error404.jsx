@@ -7,11 +7,11 @@ const Error404 = () => {
     <Container className="main text-center mt-3">
       <section>
         <img src={imgError404} alt="Error 404" className="img-fluid" />
-        <div className="mb-5">
-          <Link to="/" className="btn - btn-success">
-            <i class="bi bi-house-fill"> Inicio</i>
-            
-          </Link>
+        <div className="mb-5 ms-5">
+        <Link className="btn btn-success me-3 px-4" to="/">
+              <i class="bi bi-arrow-counterclockwise"><br></br>
+              Inicio</i> 
+            </Link>
         </div>
       </section>
     </Container>

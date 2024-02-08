@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import producto1 from "../../assets/croissant.jpg";
 
 const ItemTabla = () => {
@@ -23,12 +24,12 @@ const ItemTabla = () => {
       <td>Reposteria</td>
       {/* Opciones */}
       <td className="text-center">
-        <Button variant="warning" className="me-1">
+        <Link className="me-1 btn btn-warning" to="*">
           <i className="bi bi-pencil-square"></i>
-        </Button>
-        <Button variant="danger">
+        </Link>
+        <Link className="btn btn-danger" to="*">
           <i className="bi bi-trash"></i>
-        </Button>
+        </Link>
       </td>
     </tr>
   );

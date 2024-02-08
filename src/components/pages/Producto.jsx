@@ -19,7 +19,7 @@ const Producto = () => {
         </Card.Text>
       </Card.Body>
       <Card.Footer className="text-end">
-        <Link className="btn btn-success border-0">Ver más</Link>
+        <Link className="btn btn-success border-0" to="/administrador/detalle-producto">Ver más</Link>
       </Card.Footer>
     </Card>
   );

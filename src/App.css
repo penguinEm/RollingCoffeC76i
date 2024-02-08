@@ -45,17 +45,29 @@
   height: 9rem;
 }
 
+.contenedorImgDetalle {
+  width: 50%;
+  height: 75%;
+}
+.imgDetalle{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media all and (max-width: 991px) {
   .bannerDimesiones {
     height: 400px;
+    
   }
-
-  
 }
 
 @media all and (max-width: 767px) {
   .cardDimensiones {
     width: 75%;
+  }
+  .contenedorImgDetalle {
+    width: 100%;
   }
 }
 
