@@ -9,7 +9,7 @@ const Error404 = () => {
         <img src={imgError404} alt="Error 404" className="img-fluid" />
         <div className="mb-5 ms-5">
         <Link className="btn btn-success me-3 px-4" to="/">
-              <i class="bi bi-arrow-counterclockwise"><br></br>
+              <i className="bi bi-arrow-counterclockwise"><br></br>
               Inicio</i> 
             </Link>
         </div>

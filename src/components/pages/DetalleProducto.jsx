@@ -30,11 +30,11 @@ const DetalleProducto = () => {
             </h4>
             <div>
             <Link className="btn btn-outline-success me-3 px-4" to="/">
-              <i class="bi bi-arrow-counterclockwise"></i> <br></br>
+              <i className="bi bi-arrow-counterclockwise"></i> <br></br>
               Inicio
             </Link>
             <Link className="btn btn-success border-0" to="*">
-              <i class="bi bi-cart-check-fill"></i> <br></br>
+              <i className="bi bi-cart-check-fill"></i> <br></br>
               Comprar
             </Link>
             </div>

@@ -49,16 +49,29 @@
   width: 50%;
   height: 75%;
 }
-.imgDetalle{
+.imgDetalle {
   height: 500px;
   width: 100%;
   object-fit: cover;
 }
 
+.formularioTextArea {
+  resize: none;
+  overflow-y: auto;
+}
+
+.color-inputs::placeholder {
+  color: #6c757d98;
+}
+.color-inputs:focus,
+.color-inputs:active {
+  border-color: green; /* Cambia el color del borde al hacer clic */
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25); /* Cambia el color de la sombra al hacer clic */
+}
+
 @media all and (max-width: 991px) {
   .bannerDimesiones {
     height: 400px;
-    
   }
 }
 
