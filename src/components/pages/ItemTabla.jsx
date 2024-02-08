@@ -20,7 +20,7 @@ const ItemTabla = ({producto}) => {
         <img
           src={producto.imagen}
           alt={producto.nombreProducto}
-          className="tablaImagenDimensiones img-fluid"
+          className="tablaImagenDimensiones img-fluid img-thumbnail"
         />
       </td>
       {/* Categoria */}
