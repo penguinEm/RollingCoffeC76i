@@ -2,26 +2,29 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import producto1 from "../../assets/croissant.jpg";
 
-const ItemTabla = () => {
+const ItemTabla = ({producto}) => {
   return (
     <tr>
         {/* Codigo */}
-      <td className="text-center">1</td>
+      <td className="text-center">{producto.id}</td>
       {/* Producto */}
-      <td>Croissant de Chocolate</td>
+      <td>
+        {producto.nombreProducto}
+      </td>
       {/* Precio */}
       <td className="text-center">
-        <span>$</span>180
+        <span>$</span>{producto.precio}
       </td>
       {/* Url de la img */}
       <td className="text-center">
         <img
-          src={producto1}
-          className="img-fluid tablaImagenDimensiones img-thumbnail"
+          src={producto.imagen}
+          alt={producto.nombreProducto}
+          className="tablaImagenDimensiones img-fluid"
         />
       </td>
       {/* Categoria */}
-      <td>Reposteria</td>
+      <td>{producto.categoria}</td>
       {/* Opciones */}
       <td className="text-center">
         <Link className="me-1 btn btn-warning" to="*">

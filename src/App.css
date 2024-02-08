@@ -43,6 +43,7 @@
 .tablaImagenDimensiones {
   width: 11rem;
   height: 9rem;
+  object-fit: cover;
 }
 
 .contenedorImgDetalle {

@@ -6,18 +6,19 @@ import { leerProductosApi } from "../../helpers/queries";
 
 const Administrador = () => {
   /* Variables globales---------------- */
-  const [porductos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([]);
 
   /* Funciones ------------------------ */
   useEffect(() => {
     traerProductos();
   }, []);
 
-  const traerProductos = async() => {
+  const traerProductos = async () => {
     try {
-      await leerProductosApi();
+      const listaProductosApi = await leerProductosApi();
+      setProductos(listaProductosApi)
     } catch (error) {
-      console.log(error);
+      alert("Intente mas tarde")
     }
   };
 
@@ -33,7 +34,7 @@ const Administrador = () => {
         </div>
       </section>
       <section>
-        <ContenedorTabla></ContenedorTabla>
+        <ContenedorTabla productos={productos}></ContenedorTabla>
       </section>
     </Container>
   );
