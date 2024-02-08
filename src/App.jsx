@@ -4,7 +4,7 @@ import Footer from "./components/common/Footer";
 import Administrador from "./components/pages/Administrador";
 import Error404 from "./components/pages/Error404";
 import DetalleProducto from "./components/pages/DetalleProducto";
-import AdministradorCrear from "./components/pages/AdministradorCrear";
+import FormularioCrear from "./components/pages/FormularioCrear"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route
           exact
           path="/administrador/crear"
-          element={<AdministradorCrear></AdministradorCrear>}
+          element={<FormularioCrear></FormularioCrear>}
         ></Route>
         <Route
           exact
