@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ContenedorTabla from "./ContenedorTabla";
 
+
 const Administrador = () => {
   return (
     <Container className="main ">
