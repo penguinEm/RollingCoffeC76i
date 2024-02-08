@@ -13,12 +13,11 @@ const AdministradorCrear = () => {
         >
           <Form.Label className="color-inputs">Producto*</Form.Label>
           <Form.Control
-            id="producto"
             type="text"
             placeholder="Ej: Cafe"
             required
             minLength={3}
-            maxLength={25}
+            maxLength={50}
             className="color-inputs"
           />
         </Form.Group>
@@ -28,7 +27,6 @@ const AdministradorCrear = () => {
         >
           <Form.Label>Precio*</Form.Label>
           <Form.Control
-            id="precio"
             type="number"
             placeholder="Ej: 50"
             required
@@ -44,7 +42,6 @@ const AdministradorCrear = () => {
         >
           <Form.Label>Imagen URL*</Form.Label>
           <Form.Control
-            id="url"
             type="text"
             placeholder="Ej: https://images.pexels.com/photos/3892469/pexels-photo-3892469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             required
@@ -59,7 +56,6 @@ const AdministradorCrear = () => {
           <Form.Label>Categoria</Form.Label>
           <Form.Select
             aria-label="select"
-            id="categoria"
             required
             className="color-inputs text-secondary"
           >
@@ -76,12 +72,11 @@ const AdministradorCrear = () => {
         >
           <Form.Label>Descripcion breve</Form.Label>
           <Form.Control
-            id="descripcionBreve"
             type="text"
             placeholder="Ej: Una taza de café suave y aromática"
             required
             minLength={4}
-            maxLength={30}
+            maxLength={250}
             className="color-inputs"
           />
         </Form.Group>
@@ -92,12 +87,11 @@ const AdministradorCrear = () => {
         >
           <Form.Label>Descripcion Amplia</Form.Label>
           <Form.Control
-            id="descripcionAmplia"
             as="textarea"
             rows={3}
             placeholder="El café es una bebida aromática y vigorizante que se obtiene de los granos tostados de la planta de café. Su sabor distintivo y su rica historia lo convierten en una de las bebidas más populares y apreciadas en todo el mundo. Al ser versátil, el café se presenta en una amplia variedad de formas, desde el clásico espresso hasta las elaboradas mezclas de cafés gourmet."
             minLength={10}
-            maxLength={50}
+            maxLength={10000}
             className="formularioTextArea color-inputs"
           />
         </Form.Group>
