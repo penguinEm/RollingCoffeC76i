@@ -53,7 +53,7 @@ const AdministradorCrear = () => {
           className="mb-3 border border-1 p-1 border-success-subtle rounded-1"
           controlId="categoria"
         >
-          <Form.Label>Categoria</Form.Label>
+          <Form.Label>Categoria*</Form.Label>
           <Form.Select
             aria-label="select"
             required
@@ -70,7 +70,7 @@ const AdministradorCrear = () => {
           className="mb-3 border border-1 p-1 border-success-subtle rounded-1"
           controlId="descripcionBreve"
         >
-          <Form.Label>Descripcion breve</Form.Label>
+          <Form.Label>Descripcion breve*</Form.Label>
           <Form.Control
             type="text"
             placeholder="Ej: Una taza de café suave y aromática"
@@ -85,7 +85,7 @@ const AdministradorCrear = () => {
           className="mb-3 border border-1 p-1 border-success-subtle rounded-1"
           controlId="descripcionAmplia"
         >
-          <Form.Label>Descripcion Amplia</Form.Label>
+          <Form.Label>Descripcion Amplia*</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}

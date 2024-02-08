@@ -5,10 +5,50 @@
       "precio": 1000,
       "categoria": "Infusiones",
       "descripcion-breve": "Café rico",
-      "descripcion": "bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos",
+      "descripcion": "Bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos",
       "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "1"
+    },
+    {
+      "nombreProducto": "Té",
+      "precio": 500,
+      "categoria": "Infusiones",
+      "descripcion-breve": "Té delicioso",
+      "descripcion": "Bebida de té aromática y relajante, preparada con hojas de té de alta calidad infusionadas en agua caliente",
+      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "2"
+    },
+    {
+      "nombreProducto": "Galletas",
+      "precio": 800,
+      "categoria": "Repostería",
+      "descripcion-breve": "Galletas crujientes",
+      "descripcion": "Deliciosas galletas crujientes horneadas con ingredientes de alta calidad para satisfacer tus antojos dulces",
+      "imagen": "https://images.pexels.com/photos/4106482/pexels-photo-4106482.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "3"
+    },
+    {
+      "nombreProducto": "Café con leche",
+      "precio": 1200,
+      "categoria": "Infusiones",
+      "descripcion-breve": "Café suave con leche",
+      "descripcion": "Una mezcla perfecta de café fuerte y leche cremosa, ideal para empezar el día con energía",
+      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "4"
+    },
+    {
+      "nombreProducto": "Croissant",
+      "precio": 180,
+      "categoria": "Panadería",
+      "descripcion-breve": "Delicioso croissant",
+      "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
+      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "5"
     }
   ]
 }
