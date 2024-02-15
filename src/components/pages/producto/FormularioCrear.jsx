@@ -64,11 +64,11 @@ const AdministradorCrear = () => {
               required: "El precio del producto es obligatorio",
               min: {
                 value: 10,
-                message: "El monto del producto debe ser mayor a 10 pesos",
+                message: "El monto del producto debe ser mayor a $10",
               },
               max: {
-                value: 999999,
-                message: "El monto del producto debe ser menor a 999.999 pesos",
+                value: 10000,
+                message: "El monto del producto debe ser menor a $10.000",
               },
             })}
           />
@@ -89,6 +89,10 @@ const AdministradorCrear = () => {
             {...register("imagen", {
               required:
                 "El campo para ingresar la URL de la imagen es obligatorio",
+             /*  pattern: {
+                value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/,
+                message: "Debe ingresar una URL válida (jpg|gif|png)",
+              }, */
             })}
           />
           <Form.Text className="text-danger">
@@ -158,12 +162,12 @@ const AdministradorCrear = () => {
             {...register("descripcion", {
               required: "La descripcion detallada del producto es obligartoria",
               minLength: {
-                value: 10,
-                message: "Debe ingresar como mínimo 10 caracteres",
+                value: 30,
+                message: "Debe ingresar como mínimo 30 caracteres",
               },
               maxLength: {
-                value: 10000,
-                message: "Debe ingresar como máximo 10.000 caracteres",
+                value: 1000,
+                message: "Debe ingresar como máximo 1.000 caracteres",
               },
             })}
           />
