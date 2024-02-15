@@ -1,6 +1,5 @@
-import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import producto1 from "../../assets/croissant.jpg";
+
 
 const ItemTabla = ({producto}) => {
   return (

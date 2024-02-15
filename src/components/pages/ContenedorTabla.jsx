@@ -1,5 +1,5 @@
 import { Table } from "react-bootstrap";
-import ItemTabla from "./ItemTabla";
+import ItemTabla from "./producto/ItemTabla";
 
 const ContenedorTabla = ({productos}) => {
   return (

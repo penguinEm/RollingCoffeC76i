@@ -49,6 +49,26 @@
       "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "5"
+    },
+    {
+      "nombreProducto": "Croissant",
+      "precio": 180,
+      "categoria": "Panadería",
+      "descripcion-breve": "Delicioso croissant",
+      "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
+      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "6"
+    },
+    {
+      "nombreProducto": "Croissant",
+      "precio": 180,
+      "categoria": "Panadería",
+      "descripcion-breve": "Delicioso croissant",
+      "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
+      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "disponibilidad": true,
+      "id": "7"
     }
   ]
 }
