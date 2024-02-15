@@ -20,7 +20,7 @@ function App() {
         ></Route>
         <Route
           exact
-          path="/administrador/crear"
+          path="/crear"
           element={<FormularioCrear></FormularioCrear>}
         ></Route>
         <Route
