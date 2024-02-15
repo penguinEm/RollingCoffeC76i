@@ -26,13 +26,12 @@
 }
 
 .cardDimensiones {
-  width: 15rem;
+  width: 22rem;
 }
 
 .cardEfectos:hover {
   transition: transform 0.2s ease-in-out;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .cardScroll {
@@ -40,6 +39,11 @@
   height: 45px;
 }
 
+.cardImgDimensiones {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
 .tablaImagenDimensiones {
   width: 11rem;
   height: 9rem;
@@ -70,10 +74,22 @@
   box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25); /* Cambia el color de la sombra al hacer clic */
 }
 
+
+@media all and (max-width: 1999px) {
+  .cardDimensiones {
+    width: 19.5rem;
+  }
+ 
+}
+
 @media all and (max-width: 991px) {
   .bannerDimesiones {
     height: 400px;
   }
+  .cardDimensiones {
+    width: 20rem;
+  }
+ 
 }
 
 @media all and (max-width: 767px) {

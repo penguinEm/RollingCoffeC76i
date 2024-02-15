@@ -1,21 +1,19 @@
 import { Card} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import producto1 from "../../../assets/croissant.jpg";
 
-const Producto = () => {
+const Producto = ({producto}) => {
   return (
     <Card className="cardDimensiones px-0 mb-4 mt-3 cardEfectos ">
-      <Card.Img variant="top" src={producto1} className="w-100 img-fluid" />
+      <Card.Img variant="top" alt={producto.nombreProducto} src={producto.imagen} className="img-fluid cardImgDimensiones" />
       <Card.Body>
         <Card.Title className="lead fw-normal text-green ms-2">
-          Croissant de chocolate
+          {producto.nombreProducto}
         </Card.Title>
         <Card.Text className="cardScroll">
-          <span>Descripción: </span> Delicioso croissant relleno de delicioso
-          chocolate
+          <span>Descripción: </span> {producto.descripcionBreve}
         </Card.Text>
         <Card.Text className="fw-bold py-0">
-          <span>Precio: $</span> 180
+          <span>Precio: $</span> {producto.precio}
         </Card.Text>
       </Card.Body>
       <Card.Footer className="text-end">

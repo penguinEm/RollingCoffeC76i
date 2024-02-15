@@ -1,12 +1,12 @@
 {
   "productos": [
     {
-      "nombreProducto": "café",
+      "nombreProducto": "Café",
       "precio": 1000,
       "categoria": "Infusiones",
-      "descripcion-breve": "Café rico",
+      "descripcionBreve": "Café rico",
       "descripcion": "Bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos",
-      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imagen": "https://media.istockphoto.com/id/1143657194/es/foto/tienes-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=aN91ttVTn8gktQi6lUdM07_cbNxvwLf2PQ1PZhfZsq4=",
       "disponibilidad": true,
       "id": "1"
     },
@@ -14,9 +14,9 @@
       "nombreProducto": "Té",
       "precio": 500,
       "categoria": "Infusiones",
-      "descripcion-breve": "Té delicioso",
+      "descripcionBreve": "Té delicioso",
       "descripcion": "Bebida de té aromática y relajante, preparada con hojas de té de alta calidad infusionadas en agua caliente",
-      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imagen": "https://images.pexels.com/photos/905485/pexels-photo-905485.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "2"
     },
@@ -24,9 +24,9 @@
       "nombreProducto": "Galletas",
       "precio": 800,
       "categoria": "Repostería",
-      "descripcion-breve": "Galletas crujientes",
+      "descripcionBreve": "Galletas crujientes",
       "descripcion": "Deliciosas galletas crujientes horneadas con ingredientes de alta calidad para satisfacer tus antojos dulces",
-      "imagen": "https://images.pexels.com/photos/4106482/pexels-photo-4106482.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imagen": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "3"
     },
@@ -34,9 +34,9 @@
       "nombreProducto": "Café con leche",
       "precio": 1200,
       "categoria": "Infusiones",
-      "descripcion-breve": "Café suave con leche",
+      "descripcionBreve": "Café suave con leche",
       "descripcion": "Una mezcla perfecta de café fuerte y leche cremosa, ideal para empezar el día con energía",
-      "imagen": "https://images.pexels.com/photos/2575835/pexels-photo-2575835.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "4"
     },
@@ -44,31 +44,21 @@
       "nombreProducto": "Croissant",
       "precio": 180,
       "categoria": "Panadería",
-      "descripcion-breve": "Delicioso croissant",
+      "descripcionBreve": "Delicioso croissant",
       "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
-      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "imagen": "https://images.pexels.com/photos/4828339/pexels-photo-4828339.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "5"
     },
     {
-      "nombreProducto": "Croissant",
-      "precio": 180,
-      "categoria": "Panadería",
-      "descripcion-breve": "Delicioso croissant",
-      "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
-      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "nombreProducto": "Muffin de arándanos",
+      "precio": 150,
+      "categoria": "Repostería",
+      "descripcionBreve": "Muffin esponjoso",
+      "descripcion": "Delicioso muffin esponjoso con arándanos frescos, perfecto para acompañar tu café o té",
+      "imagen": "https://images.pexels.com/photos/2635307/pexels-photo-2635307.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "6"
-    },
-    {
-      "nombreProducto": "Croissant",
-      "precio": 180,
-      "categoria": "Panadería",
-      "descripcion-breve": "Delicioso croissant",
-      "descripcion": "Croissant hojaldrado y crujiente, con capas alternas de mantequilla y masa de pan, perfecto para acompañar tu café",
-      "imagen": "https://images.pexels.com/photos/3091320/pexels-photo-3091320.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "disponibilidad": true,
-      "id": "7"
     }
   ]
 }
