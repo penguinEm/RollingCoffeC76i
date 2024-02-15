@@ -1,6 +1,7 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { crearProductoApi } from "../../../helpers/queries";
+import Swal from "sweetalert2";
 
 const AdministradorCrear = () => {
   /* Variables globales --------------- */
@@ -16,10 +17,18 @@ const AdministradorCrear = () => {
     console.log(producto);
     const respuesta = await crearProductoApi(producto);
     if(respuesta.status === 201){
-      alert("Producto creado")
+      Swal.fire({
+        title: "Producto creado!",
+        text:`El producto ${producto.nombreProducto} fue creado correctamente`,
+        icon: "success"
+      });
       reset();
     } else {
-      console.log("Ocurrio un error")
+      Swal.fire({
+        title: "Ocurrio un error!",
+        text:`Intente nuevamente`,
+        icon: "error"
+      });
     }
   };
 

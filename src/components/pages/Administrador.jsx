@@ -16,9 +16,9 @@ const Administrador = () => {
   const traerProductos = async () => {
     try {
       const listaProductosApi = await leerProductosApi();
-      setProductos(listaProductosApi)
+      setProductos(listaProductosApi);
     } catch (error) {
-      alert("Intente mas tarde")
+      alert("Intente mas tarde");
     }
   };
 

@@ -86,6 +86,15 @@
       "categoria": "Reposteria",
       "descripcionBreve": "111111",
       "descripcion": "11111111111111111111111111111111111"
+    },
+    {
+      "id": "743b",
+      "nombreProducto": "Medialuna",
+      "precio": "240",
+      "imagen": "https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg",
+      "categoria": "Panaderia",
+      "descripcionBreve": "Medialuna deliciosa",
+      "descripcion": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
     }
   ]
 }
