@@ -59,6 +59,33 @@
       "imagen": "https://images.pexels.com/photos/2635307/pexels-photo-2635307.jpeg?auto=compress&cs=tinysrgb&w=600",
       "disponibilidad": true,
       "id": "6"
+    },
+    {
+      "id": "480d",
+      "nombreProducto": "111",
+      "precio": "1110",
+      "imagen": "https://images.pexels.com/photos/1061142/pexels-photo-1061142.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "Panaderia",
+      "descripcionBreve": "1111111",
+      "descripcion": "11111111111111111111111111111111111111111111"
+    },
+    {
+      "id": "886d",
+      "nombreProducto": "111111",
+      "precio": "111",
+      "imagen": "https://images.pexels.com/photos/1061142/pexels-photo-1061142.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "Cafeteria",
+      "descripcionBreve": "11111111",
+      "descripcion": "11111111111111111111111111111111111"
+    },
+    {
+      "id": "ae85",
+      "nombreProducto": "11",
+      "precio": "11",
+      "imagen": "https://images.pexels.com/photos/1061142/pexels-photo-1061142.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "Reposteria",
+      "descripcionBreve": "111111",
+      "descripcion": "11111111111111111111111111111111111"
     }
   ]
 }

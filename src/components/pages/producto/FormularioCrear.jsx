@@ -1,17 +1,26 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { crearProductoApi } from "../../../helpers/queries";
 
 const AdministradorCrear = () => {
   /* Variables globales --------------- */
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   /* Funciones ------------------------ */
-  const productoValidado = (producto) => {
+  const productoValidado = async (producto) => {
     console.log(producto);
+    const respuesta = await crearProductoApi(producto);
+    if(respuesta.status === 201){
+      alert("Producto creado")
+      reset();
+    } else {
+      console.log("Ocurrio un error")
+    }
   };
 
   /* Logica extra y maquetado ---------- */
@@ -89,7 +98,7 @@ const AdministradorCrear = () => {
             {...register("imagen", {
               required:
                 "El campo para ingresar la URL de la imagen es obligatorio",
-             /*  pattern: {
+              /*  pattern: {
                 value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/,
                 message: "Debe ingresar una URL válida (jpg|gif|png)",
               }, */
