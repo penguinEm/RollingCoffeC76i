@@ -28,3 +28,17 @@ export const crearProductoApi = async (productoNuevo) => {
     console.log(error);
   }
 };
+
+/* Funcion para borrar producto (solicitud delete) */
+export const borrarProductoApi = async (id) => {
+  try {
+    const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`, {
+      // Especificamos el paquete de datos que vamos a cargar, el header es el formato json,que gaurdara en nuestrao db.json
+      method: "DELETE",
+    });
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
