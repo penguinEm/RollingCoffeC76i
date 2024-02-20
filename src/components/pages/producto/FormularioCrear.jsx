@@ -15,6 +15,7 @@ const AdministradorCrear = ({ editar, titulo }) => {
   /* Funciones ------------------------------------------------------------------------ */
   const productoValidado = async (producto) => {
     if (editar === true) {
+      /* Esta es la logica para EDITAR */
     } else {
       console.log(producto);
       /* Esta es la logica para cuando quiero CREAR */

@@ -60,7 +60,10 @@ const ItemTabla = ({ producto, setProductos }) => {
       <td>{producto.categoria}</td>
       {/* Opciones */}
       <td className="text-center">
-        <Link className="me-1 btn btn-warning" to="*">
+        <Link
+          className="me-1 btn btn-warning"
+          to={`/administrador/editar/${producto.id}`}
+        >
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Link className="btn btn-danger" onClick={borrarProducto}>
