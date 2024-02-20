@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { crearProductoApi } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 
-const AdministradorCrear = () => {
+const AdministradorCrear = ({ editar, titulo }) => {
   /* Variables globales --------------- */
   const {
     register,
@@ -12,31 +12,35 @@ const AdministradorCrear = () => {
     formState: { errors },
   } = useForm();
 
-  /* Funciones ------------------------ */
+  /* Funciones ------------------------------------------------------------------------ */
   const productoValidado = async (producto) => {
-    console.log(producto);
-    const respuesta = await crearProductoApi(producto);
-    if(respuesta.status === 201){
-      Swal.fire({
-        title: "Producto creado!",
-        text:`El producto ${producto.nombreProducto} fue creado correctamente`,
-        icon: "success"
-      });
-      reset();
+    if (editar === true) {
     } else {
-      Swal.fire({
-        title: "Ocurrio un error!",
-        text:`Intente nuevamente`,
-        icon: "error"
-      });
+      console.log(producto);
+      /* Esta es la logica para cuando quiero CREAR */
+      const respuesta = await crearProductoApi(producto);
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "Producto creado!",
+          text: `El producto ${producto.nombreProducto} fue creado correctamente`,
+          icon: "success",
+        });
+        reset();
+      } else {
+        Swal.fire({
+          title: "Ocurrio un error!",
+          text: `Intente nuevamente`,
+          icon: "error",
+        });
+      }
     }
   };
 
-  /* Logica extra y maquetado ---------- */
+  /* LOGICA EXTRA Y MAQUETADO  ---------- ---------------------------------------------------*/
   return (
     <Container className=" main px-lg-5 py-5 ">
       <h1 className="display-1 mx-5 pb-4 border-bottom border-secondary-subtle">
-        Nuevo Producto
+        {titulo}
       </h1>
       <Form
         className=" rounded-2 px-lg-5 pt-3 pb-5"
