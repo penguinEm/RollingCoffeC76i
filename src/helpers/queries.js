@@ -21,7 +21,7 @@ export const obtenerProductosApi = async (id) => {
   }
 };
 
-/* Funcion para CREAR un producto nuevo (con una solicitud POST) y meterlo en la api db.json */
+/*POST: Funcion para CREAR un producto nuevo (con una solicitud POST) y meterlo en la api db.json */
 export const crearProductoApi = async (productoNuevo) => {
   try {
     const respuesta = await fetch(URI_PRODUCTOS, {
@@ -39,12 +39,30 @@ export const crearProductoApi = async (productoNuevo) => {
   }
 };
 
-/* Funcion para BORRAR producto (solicitud delete) */
+/*DELETE: Funcion para BORRAR producto (solicitud delete) */
 export const borrarProductoApi = async (id) => {
   try {
     const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`, {
       // Especificamos el paquete de datos que vamos a cargar, el header es el formato json,que gaurdara en nuestrao db.json
       method: "DELETE",
+    });
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+/* PUT: PARA EDITAR  */
+
+export const editarProductoApi = async (id, producto) => {
+  try {
+    const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(producto),
     });
     console.log(respuesta);
     return respuesta;

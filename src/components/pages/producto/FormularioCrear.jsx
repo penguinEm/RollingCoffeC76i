@@ -2,11 +2,12 @@ import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import {
   crearProductoApi,
+  editarProductoApi,
   obtenerProductosApi,
 } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const AdministradorCrear = ({ editar, titulo }) => {
   /* Variables globales --------------- */
@@ -19,7 +20,7 @@ const AdministradorCrear = ({ editar, titulo }) => {
   } = useForm();
 
   const { id } = useParams();
-
+  const navegacion = useNavigate();
   /* Funciones ------------------------------------------------------------------------ */
   useEffect(() => {
     /* Solo si estoy editando */
@@ -52,6 +53,22 @@ const AdministradorCrear = ({ editar, titulo }) => {
   const productoValidado = async (producto) => {
     if (editar === true) {
       /* Esta es la logica para EDITAR */
+      const respuesta = await editarProductoApi(id, producto);
+      if (respuesta.status === 200) {
+        Swal.fire({
+          title: "Producto editado!",
+          text: `El producto ${producto.nombreProducto} fue editado correctamente`,
+          icon: "success",
+        });
+        //Redireccionar con useNavigate
+        navegacion("/administrador");
+      } else {
+        Swal.fire({
+          title: "Ocurrio un error!",
+          text: `Intente nuevamente`,
+          icon: "error",
+        });
+      }
     } else {
       /* Esta es la logica para cuando quiero CREAR */
       const respuesta = await crearProductoApi(producto);

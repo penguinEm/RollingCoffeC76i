@@ -22,12 +22,11 @@
     },
     {
       "nombreProducto": "Galletas",
-      "precio": 800,
-      "categoria": "Repostería",
-      "descripcionBreve": "Galletas crujientes",
-      "descripcion": "Deliciosas galletas crujientes horneadas con ingredientes de alta calidad para satisfacer tus antojos dulces",
+      "precio": "100",
       "imagen": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "disponibilidad": true,
+      "categoria": "Cafeteria",
+      "descripcionBreve": "Galletas muy crujientes",
+      "descripcion": "Deliciosas galletas crujientes horneadas con ingredientes de alta calidad para satisfacer tus antojos dulces",
       "id": "3"
     },
     {
@@ -61,13 +60,13 @@
       "id": "6"
     },
     {
-      "id": "de0c",
-      "nombreProducto": "111",
-      "precio": "111",
-      "imagen": "111",
-      "categoria": "Panaderia",
-      "descripcionBreve": "1111111111111",
-      "descripcion": "111111111111111111111111111111111111111"
+      "nombreProducto": "222",
+      "precio": "222",
+      "imagen": "222",
+      "categoria": "Cafeteria",
+      "descripcionBreve": "2222222",
+      "descripcion": "2222222222222222222222222222222",
+      "id": "de0c"
     }
   ]
 }
