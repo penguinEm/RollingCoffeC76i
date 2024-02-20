@@ -1,7 +1,12 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoApi } from "../../../helpers/queries";
+import {
+  crearProductoApi,
+  obtenerProductosApi,
+} from "../../../helpers/queries";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const AdministradorCrear = ({ editar, titulo }) => {
   /* Variables globales --------------- */
@@ -9,15 +14,45 @@ const AdministradorCrear = ({ editar, titulo }) => {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm();
 
+  const { id } = useParams();
+
   /* Funciones ------------------------------------------------------------------------ */
+  useEffect(() => {
+    /* Solo si estoy editando */
+    if (editar === true) {
+      cargarDatosFormulario();
+    }
+  }, []);
+
+  const cargarDatosFormulario = async () => {
+    const respuesta = await obtenerProductosApi(id);
+    if (respuesta.status === 200) {
+      const productoBuscado = await respuesta.json();
+      //Cargar los datos del formulario en el producto buscado
+      setValue("nombreProducto", productoBuscado.nombreProducto);
+      setValue("categoria", productoBuscado.categoria);
+      setValue("descripcion", productoBuscado.descripcion);
+      setValue("descripcionBreve", productoBuscado.descripcionBreve);
+      setValue("id", productoBuscado.id);
+      setValue("imagen", productoBuscado.imagen);
+      setValue("precio", productoBuscado.precio);
+    } else {
+      Swal.fire({
+        title: "Error !",
+        text: `Intente editar nuevamente en unos minutos`,
+        icon: "error",
+      });
+    }
+  };
+
   const productoValidado = async (producto) => {
     if (editar === true) {
       /* Esta es la logica para EDITAR */
     } else {
-      console.log(producto);
       /* Esta es la logica para cuando quiero CREAR */
       const respuesta = await crearProductoApi(producto);
       if (respuesta.status === 201) {
