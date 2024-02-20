@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { borrarProductoApi } from "../../../helpers/queries";
+import { borrarProductoApi, leerProductosApi } from "../../../helpers/queries";
 
-const ItemTabla = ({ producto }) => {
+const ItemTabla = ({ producto, setProductos }) => {
   /* Funciones------------- */
   const borrarProducto = () => {
     Swal.fire({
@@ -14,7 +14,7 @@ const ItemTabla = ({ producto }) => {
       cancelButtonColor: "#d33",
       confirmButtonText: "Borrar",
       cancelButtonText: "Cancelar",
-    }).then(async(result) => {
+    }).then(async (result) => {
       if (result.isConfirmed) {
         const respuesta = await borrarProductoApi(producto.id);
         if (respuesta.status === 200) {
@@ -23,6 +23,9 @@ const ItemTabla = ({ producto }) => {
             text: `El producto "${producto.nombreProducto}" fue eliminado correctamente`,
             icon: "success",
           });
+          /* Actualizar la tabla al borrar */
+          const productosActualizados = await leerProductosApi();
+          setProductos(productosActualizados);
         } else {
           Swal.fire({
             title: "Ocurrio un error!",

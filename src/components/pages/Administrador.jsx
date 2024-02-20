@@ -34,7 +34,7 @@ const Administrador = () => {
         </div>
       </section>
       <section>
-        <ContenedorTabla productos={productos}></ContenedorTabla>
+        <ContenedorTabla productos={productos} setProductos={setProductos}></ContenedorTabla>
       </section>
     </Container>
   );

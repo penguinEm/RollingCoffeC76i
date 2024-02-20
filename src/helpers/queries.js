@@ -11,7 +11,7 @@ export const leerProductosApi = async () => {
   }
 };
 
-/* Funcion para crear un producto nuevo (con una solicitud POST) y meterlo en la api db.json */
+/* Funcion para CREAR un producto nuevo (con una solicitud POST) y meterlo en la api db.json */
 export const crearProductoApi = async (productoNuevo) => {
   try {
     const respuesta = await fetch(URI_PRODUCTOS, {
@@ -29,7 +29,7 @@ export const crearProductoApi = async (productoNuevo) => {
   }
 };
 
-/* Funcion para borrar producto (solicitud delete) */
+/* Funcion para BORRAR producto (solicitud delete) */
 export const borrarProductoApi = async (id) => {
   try {
     const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`, {

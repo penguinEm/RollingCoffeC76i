@@ -1,7 +1,7 @@
 import { Table } from "react-bootstrap";
 import ItemTabla from "./producto/ItemTabla";
 
-const ContenedorTabla = ({productos}) => {
+const ContenedorTabla = ({productos, setProductos}) => {
   return (
     <Table striped bordered hover className="mb-5 mt-3">
       <thead className="text-center">
@@ -16,7 +16,7 @@ const ContenedorTabla = ({productos}) => {
       </thead>
       <tbody>
         {
-        productos.map((producto)=> <ItemTabla key={producto.id} producto={producto}></ItemTabla>)
+        productos.map((producto)=> <ItemTabla key={producto.id} producto={producto} setProductos={setProductos}></ItemTabla>)
         }
       </tbody>
     </Table>
