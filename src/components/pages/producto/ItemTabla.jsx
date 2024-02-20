@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2"
+import Swal from "sweetalert2";
 import { borrarProductoApi } from "../../../helpers/queries";
 
-const ItemTabla = ({producto}) => {
-
+const ItemTabla = ({ producto }) => {
   /* Funciones------------- */
   const borrarProducto = () => {
     Swal.fire({
@@ -14,33 +13,37 @@ const ItemTabla = ({producto}) => {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Borrar",
-      cancelButtonText: "Cancelar"
-    }).then((result) => {
+      cancelButtonText: "Cancelar",
+    }).then(async(result) => {
       if (result.isConfirmed) {
-
-        borrarProductoApi(producto.id)
-        
-
-        Swal.fire({
-          title: "Deleted!",
-          text: "Your file has been deleted.",
-          icon: "success"
-        });
+        const respuesta = await borrarProductoApi(producto.id);
+        if (respuesta.status === 200) {
+          Swal.fire({
+            title: "Producto Eliminado!",
+            text: `El producto "${producto.nombreProducto}" fue eliminado correctamente`,
+            icon: "success",
+          });
+        } else {
+          Swal.fire({
+            title: "Ocurrio un error!",
+            text: `Intente nuevamente mas tarde`,
+            icon: "error",
+          });
+        }
       }
     });
-  }
+  };
   /* Maquetado y logica extra */
   return (
     <tr>
-        {/* Codigo */}
+      {/* Codigo */}
       <td className="text-center">{producto.id}</td>
       {/* Producto */}
-      <td>
-        {producto.nombreProducto}
-      </td>
+      <td>{producto.nombreProducto}</td>
       {/* Precio */}
       <td className="text-center">
-        <span>$</span>{producto.precio}
+        <span>$</span>
+        {producto.precio}
       </td>
       {/* Url de la img */}
       <td className="text-center">

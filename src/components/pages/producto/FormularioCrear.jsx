@@ -46,7 +46,7 @@ const AdministradorCrear = () => {
           className="mb-3 border border-1 p-1 border-success-subtle rounded-1"
           controlId="producto"
         >
-          <Form.Label className="color-inputs">Producto*</Form.Label>
+          <Form.Label>Producto*</Form.Label>
           <Form.Control
             type="text"
             placeholder="Ej: Cafe"

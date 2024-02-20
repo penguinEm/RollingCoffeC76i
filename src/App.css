@@ -70,8 +70,13 @@
 }
 .color-inputs:focus,
 .color-inputs:active {
-  border-color: green; /* Cambia el color del borde al hacer clic */
-  box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25); /* Cambia el color de la sombra al hacer clic */
+  border-color: green; 
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25);
+  
+}
+
+.bg-greenLight{
+  background-color: #11ff0023;
 }
 
 
