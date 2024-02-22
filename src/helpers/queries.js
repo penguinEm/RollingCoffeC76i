@@ -11,8 +11,8 @@ export const leerProductosApi = async () => {
   }
 };
 
-/* Funcion para obtener productos de la api (con una solicitud GET de 1 producto para hacer el EDIT) */
-export const obtenerProductosApi = async (id) => {
+/* solicitud GET de 1 producto Funcion para obtener productos de la api ( para hacer el EDIT) */
+export const obtenerProductoApi = async (id) => {
   try {
     const respuesta = await fetch(`${URI_PRODUCTOS}/${id}`);
     return respuesta;

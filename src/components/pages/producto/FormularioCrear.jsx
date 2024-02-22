@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import {
   crearProductoApi,
   editarProductoApi,
-  obtenerProductosApi,
+  obtenerProductoApi,
 } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
@@ -30,7 +30,7 @@ const AdministradorCrear = ({ editar, titulo }) => {
   }, []);
 
   const cargarDatosFormulario = async () => {
-    const respuesta = await obtenerProductosApi(id);
+    const respuesta = await obtenerProductoApi(id);
     if (respuesta.status === 200) {
       const productoBuscado = await respuesta.json();
       //Cargar los datos del formulario en el producto buscado

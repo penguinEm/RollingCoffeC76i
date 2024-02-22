@@ -1,7 +1,7 @@
 import { Container, Image } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { obtenerProductosApi } from "../../helpers/queries";
+import { obtenerProductoApi } from "../../helpers/queries";
 import Swal from "sweetalert2";
 
 const DetalleProducto = () => {
@@ -16,8 +16,7 @@ const DetalleProducto = () => {
 
   const cargarDetalles = async () => {
     try {
-      const respuesta = await obtenerProductosApi(id);
-
+      const respuesta = await obtenerProductoApi(id);
       if (respuesta.status === 200) {
         const productoBuscado = await respuesta.json();
         setProducto(productoBuscado);
