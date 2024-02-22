@@ -1,13 +1,12 @@
 {
   "productos": [
     {
-      "nombreProducto": "Café",
-      "precio": 1000,
-      "categoria": "Infusiones",
-      "descripcionBreve": "Café rico",
-      "descripcion": "Bebida de café concentrada y aromática que se prepara haciendo pasar agua caliente a alta presión por granos de café muy finamente molidos",
-      "imagen": "https://media.istockphoto.com/id/1143657194/es/foto/tienes-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=aN91ttVTn8gktQi6lUdM07_cbNxvwLf2PQ1PZhfZsq4=",
-      "disponibilidad": true,
+      "nombreProducto": "Brownie de chocolate",
+      "precio": "1200",
+      "imagen": "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
+      "categoria": "Panaderia",
+      "descripcionBreve": "Delicioso brownie de chocolate con dulce de leche",
+      "descripcion": "El chocolate de calidad premium se une a la cremosidad del dulce de leche, creando una sinfonía de sabores que deleitará tus sentidos. La intensidad del chocolate se equilibra con la dulzura acaramelada, brindándote un placer indulgente que no podrás resistir. Ya sea disfrutado solo, acompañado de una bola de helado o como el postre estrella en cualquier ocasión especial, nuestro brownie de chocolate con dulce de leche es la obra maestra culinaria que hará que cada momento sea inolvidable. ¿Estás listo para un viaje de placer chocolatoso y dulce?\"",
       "id": "1"
     },
     {
@@ -60,13 +59,22 @@
       "id": "6"
     },
     {
-      "nombreProducto": "222",
-      "precio": "222",
-      "imagen": "222",
+      "nombreProducto": "Café Negro",
+      "precio": "750",
+      "imagen": "https://media.istockphoto.com/id/1359781504/es/foto/aroma-a-caf%C3%A9-dulce-granos-de-caf%C3%A9-y-caf%C3%A9-de-la-ma%C3%B1ana.webp?s=1024x1024&w=is&k=20&c=ItR4TKicRafC6-5Qk77GFwH9n5TJWGadUS52noYNgmU=",
       "categoria": "Cafeteria",
-      "descripcionBreve": "2222222",
-      "descripcion": "2222222222222222222222222222222",
+      "descripcionBreve": "Cafe delicioso",
+      "descripcion": "Con un aroma embriagador que anticipa la delicia que está por venir, nuestro café ofrece un equilibrio perfecto entre la robustez y la suavidad. Cada taza es una sinfonía de sabores, donde notas de chocolate oscuro se entrelazan con matices tostados, creando un perfil de sabor profundo y complejo.",
       "id": "de0c"
+    },
+    {
+      "id": "035f",
+      "nombreProducto": "Tarta de ricota",
+      "precio": "4000",
+      "imagen": "https://www.clarin.com/img/2023/04/20/3Gh2PIbUg_1200x630__1.jpg",
+      "categoria": "Reposteria",
+      "descripcionBreve": "Una experiencia exquisita",
+      "descripcion": "Cada porción es una sinfonía de texturas y sabores, desde la primera mordida que revela la crujiente capa exterior hasta la suavidad sedosa de la ricota en su núcleo. La ricota, con su delicado matiz lácteo, se combina magistralmente con la dulzura justa, creando un equilibrio armonioso que deleitará incluso a los paladares más exigentes."
     }
   ]
 }

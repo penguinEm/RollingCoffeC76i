@@ -32,7 +32,6 @@ export const crearProductoApi = async (productoNuevo) => {
       },
       body: JSON.stringify(productoNuevo),
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -46,7 +45,6 @@ export const borrarProductoApi = async (id) => {
       // Especificamos el paquete de datos que vamos a cargar, el header es el formato json,que gaurdara en nuestrao db.json
       method: "DELETE",
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -64,7 +62,6 @@ export const editarProductoApi = async (id, producto) => {
       },
       body: JSON.stringify(producto),
     });
-    console.log(respuesta);
     return respuesta;
   } catch (error) {
     console.log(error);
