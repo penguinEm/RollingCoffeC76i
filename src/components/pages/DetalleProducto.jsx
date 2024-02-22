@@ -5,16 +5,16 @@ import { obtenerProductosApi } from "../../helpers/queries";
 import Swal from "sweetalert2";
 
 const DetalleProducto = () => {
-  /* VARIABLES GLOBALES --------------------------------------------------------------------------------------------- */
+  /* 1. VARIABLES GLOBALES --------------------------------------------------------------------------------------------- */
   const { id } = useParams();
   const [producto, setProducto] = useState({});
 
-  /* FUNCIONES ------------------------------------------------------------------------------------------------------- */
+  /* 2. FUNCIONES ------------------------------------------------------------------------------------------------------- */
   useEffect(() => {
-    cargarDetales();
+    cargarDetalles();
   }, []);
 
-  const cargarDetales = async () => {
+  const cargarDetalles = async () => {
     try {
       const respuesta = await obtenerProductosApi(id);
 
@@ -38,7 +38,7 @@ const DetalleProducto = () => {
     }
   };
 
-  /* MAQUETADO Y LOGICA EXT ------------------------------------------------------------------------------------------- */
+  /* 3. MAQUETADO Y LOGICA EXT ------------------------------------------------------------------------------------------- */
   return (
     <Container className="mb-5 mt-3">
       <article className=" border border-1 rounded-2 border-secondary-subtle d-flex flex-column flex-lg-row flex-md-row">
