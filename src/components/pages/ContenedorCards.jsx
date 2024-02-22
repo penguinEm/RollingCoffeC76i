@@ -4,10 +4,10 @@ import { leerProductosApi } from "../../helpers/queries";
 import { useState, useEffect } from "react";
 
 const ContenedorCards = () => {
-  /* Variables globlaes---------------------------------- */
+  /*1. VARIABLES GLOBALES------------------------------------------------------------------------------------------------ */
   const [productos, setProductos] = useState([]);
 
-  /* Funciones ------------------------------------------ */
+  /* 2. FUNCIONES ------------------------------------------------------------------------------------------------------- */
   useEffect(() => {
     traerProductos();
   }, []);
@@ -21,7 +21,7 @@ const ContenedorCards = () => {
     }
   };
 
-  /* Logica extra y maquetado --------------------------- */
+  /* 3. LOGICA EXTRA Y MAQUETADO --------------------------------------------------------------------------------------- */
   return (
     <Container>
       <h1 className=" display-4 mt-5 border-bottom pb-3">Nuestros Productos</h1>
