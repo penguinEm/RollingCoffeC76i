@@ -1,6 +1,8 @@
 import { Button, Container, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { login } from "../../../helpers/queries";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   /* Variables globales ----------------------------------------------------*/
@@ -11,13 +13,24 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
+  const navegacion = useNavigate();
+  
   /* Funciones ------------------------------------------------------------ */
-  const loginValido = async () => {
-    Swal.fire({
-      title: "Login Correcto!",
-      icon: "success",
-    });
-    reset();
+  const loginValido = (usuario) => {
+    if (login(usuario) === true) {
+      Swal.fire({
+        title: "Login Correcto!",
+        text: `El usuario ${usuario.email} ingreso correctamente`,
+        icon: "success",
+      });
+      navegacion("/administrador")
+    } else {
+      Swal.fire({
+        title: "Ocurrio un error!",
+        text: `Credenciales invalidas`,
+        icon: "error",
+      });
+    }
   };
 
   /* Maquetado - log extra ------------------------------------------------*/

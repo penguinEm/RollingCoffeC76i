@@ -67,3 +67,22 @@ export const editarProductoApi = async (id, producto) => {
     console.log(error);
   }
 };
+
+/* POST PARA EL LOGIN: cuando tenga el backend realizar un post para el login */
+
+/* objeto hardcodeado del ADMIN */
+const admin = {
+  email: "admin@admin.com",
+  contrasenia: "12345678",
+};
+
+export const login = (usuario) => {
+  if (usuario.email === admin.email && usuario.contrasenia === admin.contrasenia) {
+    sessionStorage.setItem("loginRollingCoffe", JSON.stringify(usuario.email));
+    console.log(usuario)
+    return true;
+  } else {
+    console.log(usuario)
+    return false;
+  }
+};
