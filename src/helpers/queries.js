@@ -81,7 +81,7 @@ export const login = (usuario) => {
     usuario.email === admin.email &&
     usuario.contrasenia === admin.contrasenia
   ) {
-    sessionStorage.setItem("loginRollingCoffe", JSON.stringify(usuario.email));
+    sessionStorage.setItem("keyLoginRollingCoffe", JSON.stringify(usuario.email));
 
     return true;
   } else {

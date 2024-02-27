@@ -7,6 +7,8 @@ import DetalleProducto from "./components/pages/DetalleProducto";
 import FormularioCrear from "./components/pages/producto/FormularioCrear";
 import Login from "./components/pages/user/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RutasProtegidas from "./components/routes/RutasProtegidas";
+import RutasAdmin from "./components/routes/RutasAdmin";
 
 function App() {
   return (
@@ -14,21 +16,24 @@ function App() {
       <BarraDeNavegacion></BarraDeNavegacion>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
+
         <Route
           exact
           path="/administrador/*"
-          element={<Administrador></Administrador>}
+          element={
+            <RutasProtegidas>
+              <RutasAdmin></RutasAdmin>
+            </RutasProtegidas>
+          }
         ></Route>
         <Route exact path="/login" element={<Login></Login>}></Route>
-     
 
-        {/* A esta ruta de EDITAR le agregamos el parametro para hacer el edit */}
-       
         <Route
           exact
           path="/administrador/detalle-producto/:id"
           element={<DetalleProducto></DetalleProducto>}
         ></Route>
+
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
