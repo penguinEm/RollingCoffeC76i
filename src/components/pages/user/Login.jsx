@@ -9,12 +9,11 @@ const Login = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
   const navegacion = useNavigate();
-  
+
   /* Funciones ------------------------------------------------------------ */
   const loginValido = (usuario) => {
     if (login(usuario) === true) {

@@ -16,32 +16,14 @@ function App() {
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
         <Route
           exact
-          path="/administrador"
+          path="/administrador/*"
           element={<Administrador></Administrador>}
         ></Route>
         <Route exact path="/login" element={<Login></Login>}></Route>
-        <Route
-          exact
-          path="/crear"
-          element={
-            <FormularioCrear
-              editar={false}
-              titulo={"Nuevo Producto"}
-            ></FormularioCrear>
-          }
-        ></Route>
+     
 
         {/* A esta ruta de EDITAR le agregamos el parametro para hacer el edit */}
-        <Route
-          exact
-          path="/administrador/editar/:id"
-          element={
-            <FormularioCrear
-              editar={true}
-              titulo={"Editar producto"}
-            ></FormularioCrear>
-          }
-        ></Route>
+       
         <Route
           exact
           path="/administrador/detalle-producto/:id"
