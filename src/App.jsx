@@ -9,11 +9,17 @@ import Login from "./components/pages/user/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import RutasAdmin from "./components/routes/RutasAdmin";
+import { useState } from "react";
 
 function App() {
+  /* quiero checkear si alguien se ha logeado */
+  const usuario =
+    JSON.parse(sessionStorage.getItem("keyLoginRollingCoffe")) || "";
+  const [usuarioLogeado, setUsuarioLogeado] = useState(usuario);
+
   return (
     <BrowserRouter>
-      <BarraDeNavegacion></BarraDeNavegacion>
+      <BarraDeNavegacion usuarioLogeado={usuarioLogeado} setUsuarioLogeado={setUsuarioLogeado}></BarraDeNavegacion>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
 
@@ -26,7 +32,11 @@ function App() {
             </RutasProtegidas>
           }
         ></Route>
-        <Route exact path="/login" element={<Login></Login>}></Route>
+        <Route
+          exact
+          path="/login"
+          element={<Login setUsuarioLogeado={setUsuarioLogeado}></Login>}
+        ></Route>
 
         <Route
           exact

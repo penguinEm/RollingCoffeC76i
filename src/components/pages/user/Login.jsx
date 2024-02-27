@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import { login } from "../../../helpers/queries";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({setUsuarioLogeado}) => {
   /* Variables globales ----------------------------------------------------*/
   const {
     register,
@@ -22,6 +22,7 @@ const Login = () => {
         text: `El usuario ${usuario.email} ingreso correctamente`,
         icon: "success",
       });
+      setUsuarioLogeado(usuario.email)
       navegacion("/administrador")
     } else {
       Swal.fire({

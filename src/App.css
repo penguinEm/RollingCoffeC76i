@@ -45,6 +45,18 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.hover-estilos {
+  transition: background-color 0.3s ease;
+}
+
+.hover-estilos:hover {
+  background: linear-gradient(to right, #00cc66, #003c25a0);
+  box-shadow: 0 8px 12px rgba(0, 204, 102, 0.3), 0 3px 6px rgba(0, 60, 37, 0.3);
+}
+
+
+
+
 .cardScroll {
   overflow-y: auto;
   height: 45px;
