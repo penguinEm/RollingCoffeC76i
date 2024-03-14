@@ -24,7 +24,7 @@ const Producto = ({ producto }) => {
       <Card.Footer className="text-end">
         <Link
           className="btn btn-success border-0"
-          to={`/administrador/detalle-producto/${producto.id}`}
+          to={`/administrador/detalle-producto/${producto._id}`}
         >
           Ver más
         </Link>

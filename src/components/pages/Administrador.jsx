@@ -28,7 +28,7 @@ const Administrador = () => {
       <section className="d-flex align-items-center accordion-collapsemt-5 border-bottom pb-3">
         <h1 className="display-4 ">Productos Disponibles</h1>
         <div className="ms-auto">
-          <Link className="btn btn-primary" to="/crear">
+          <Link className="btn btn-primary" to="/administrador/crear">
             <i className="bi bi-file-earmark-plus-fill"></i>
           </Link>
         </div>

@@ -164,10 +164,10 @@ const AdministradorCrear = ({ editar, titulo }) => {
             {...register("imagen", {
               required:
                 "El campo para ingresar la URL de la imagen es obligatorio",
-              /*  pattern: {
-                value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/,
-                message: "Debe ingresar una URL válida (jpg|gif|png)",
-              }, */
+              pattern: {
+                value: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg)/,
+                message: "Debe ingresar una URL válida (jpg|gif|png|jpeg)",
+              },
             })}
           />
           <Form.Text className="text-danger">

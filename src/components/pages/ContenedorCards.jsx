@@ -27,7 +27,7 @@ const ContenedorCards = () => {
       <h1 className=" display-4 mt-5 border-bottom pb-3">Nuestros Productos</h1>
       <article className="row justify-content-center justify-content-sm-center justify-content-lg-between justify-content-md-between">
         {productos.map((producto) => (
-          <Producto key={producto.id} producto={producto}></Producto>
+          <Producto key={producto._id} producto={producto}></Producto>
         ))}
       </article>
     </Container>

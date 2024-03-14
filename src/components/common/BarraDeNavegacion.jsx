@@ -16,7 +16,7 @@ const BarraDeNavegacion = ({ usuarioLogeado, setUsuarioLogeado }) => {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Si, salir!",
-      cancelButtonText: "Permanecer logeado"
+      cancelButtonText: "Permanecer logeado",
     }).then((result) => {
       if (result.isConfirmed) {
         /* Resetear el sesionstorage */
@@ -56,6 +56,7 @@ const BarraDeNavegacion = ({ usuarioLogeado, setUsuarioLogeado }) => {
                   Administrador
                 </NavLink>
                 <Button
+                  
                   className="nav-link hover-estilos rounded-0"
                   onClick={logout}
                 >
