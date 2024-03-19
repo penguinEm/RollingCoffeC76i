@@ -19,7 +19,7 @@ const Login = ({setUsuarioLogeado}) => {
     if (login(usuario) === true) {
       Swal.fire({
         title: "Login Correcto!",
-        text: `El usuario ${usuario.email} ingreso correctamente`,
+        html: `El usuario <span class="text-success">${usuario.email}</span> ingreso correctamente`,
         icon: "success",
       });
       setUsuarioLogeado(usuario.email)
