@@ -19,7 +19,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <BarraDeNavegacion usuarioLogeado={usuarioLogeado} setUsuarioLogeado={setUsuarioLogeado}></BarraDeNavegacion>
+      <BarraDeNavegacion
+        usuarioLogeado={usuarioLogeado}
+        setUsuarioLogeado={setUsuarioLogeado}
+      ></BarraDeNavegacion>
       <Routes>
         <Route exact path="/" element={<Inicio></Inicio>}></Route>
 
@@ -43,6 +46,8 @@ function App() {
           path="/administrador/detalle-producto/:id"
           element={<DetalleProducto></DetalleProducto>}
         ></Route>
+
+        <Route exact path="/registro" element={<Error404></Error404>}></Route>
 
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>

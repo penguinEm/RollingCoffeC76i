@@ -34,7 +34,7 @@ const ContenedorCards = () => {
           Nuestros Productos
         </h1>
       )}
-      {productos.length === 0 ? (
+      { productos.length === 0 ? (
         <Alert variant="danger" className="mt-3">
           No se pudieron cargar los productos en este momento. Intente
           nuevamente más tarde.

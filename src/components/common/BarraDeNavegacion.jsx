@@ -69,7 +69,7 @@ const BarraDeNavegacion = ({ usuarioLogeado, setUsuarioLogeado }) => {
               </NavLink>
             )}
 
-            <NavLink end className="nav-link hover-estilos" to="*">
+            <NavLink end className="nav-link hover-estilos" to="/registro">
               Registro
             </NavLink>
           </Nav>
